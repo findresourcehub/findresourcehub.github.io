@@ -14,129 +14,16 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👽</text></svg>">
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link href="../../style.css" rel="stylesheet">
     <title>Find Resource Hub</title>
-
-    <style>
-        /* img {
-            width: 70%;
-            border-radius: 10px;
-        } */
-
-        a {
-            text-decoration: none;
-            color: rgb(192, 192, 192);
-        }
-
-        .blackText {
-            color: black;
-        }
-
-        a:hover {
-            color: black;
-        }
-
-        .boxer {
-            background-color: rgb(230, 230, 230);
-            border: 1px solid rgb(201, 201, 201);
-            border-radius: 10px;
-            padding: 2%;
-            margin: 1%;
-            transition: 0.3s;
-            transition-timing-function: ease-in-out;
-        }
-
-        .boxer:hover {
-            box-shadow: 0px 0px 10px lightgrey;
-            transform: scale(1.02);
-            transition: 0.3s;
-            transition-timing-function: ease-in-out;
-        }
-
-        /*start: for callouts */
-        .bs-callout {
-            padding: 20px;
-            margin: 20px 0;
-            border: 1px solid #eee;
-            border-left-width: 5px;
-            border-radius: 3px;
-        }
-
-        .bs-callout h4 {
-            margin-top: 0;
-            margin-bottom: 5px;
-
-        }
-
-        .bs-callout p:last-child {
-            margin-bottom: 0;
-        }
-
-        .bs-callout code {
-            border-radius: 3px;
-        }
-
-        .bs-callout+.bs-callout {
-            margin-top: -5px;
-        }
-
-        .bs-callout-default {
-            border-left-color: #777;
-            background-color: rgb(236, 236, 236);
-        }
-
-        .bs-callout-default h4 {
-            color: #777;
-        }
-
-        .bs-callout-primary {
-            border-left-color: #428bca;
-            background-color: #eef6fd;
-        }
-
-        .bs-callout-primary h4 {
-            color: #428bca;
-            background-color: #4c81ad;
-        }
-
-        .bs-callout-success {
-            border-left-color: #5cb85c;
-            background-color: #f1fcf1;
-        }
-
-        .bs-callout-success h4 {
-            color: #5cb85c;
-        }
-
-        .bs-callout-danger {
-            border-left-color: #d9534f;
-            background-color: #fdeaea;
-        }
-
-        .bs-callout-danger h4 {
-            color: #d9534f;
-        }
-
-        .bs-callout-warning {
-            border-left-color: #f0ad4e;
-            background-color: #fdf6ed;
-        }
-
-        .bs-callout-warning h4 {
-            color: #f0ad4e;
-        }
-
-        .bs-callout-info {
-            border-left-color: #5bc0de;
-            background-color: #e9f5f8;
-        }
-
-        .bs-callout-info h4 {
-            color: #5bc0de;
-        }
-
-        /*end: for callouts */
-    </style>
 
 </head>
 
@@ -150,7 +37,6 @@
     <!-- section start -->
     <div class="container fill" style="padding-top: 10vh;">
         <!-- start:breadcrumbs  -->
-
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
@@ -158,8 +44,8 @@
                     heaviness of AR markers</li>
             </ol>
         </nav>
-
         <!-- end:breadcrumbs  -->
+
         <h3>Representation of strength of bonds with heaviness of AR markers</h3>
 
         <div class="row">
@@ -193,13 +79,99 @@
                 <br>
                 <!-- Video open -->
                 <iframe height="285" width="500"
-                    src="https://www.youtube.com/embed/U4voleK7QyI?autoplay=1&mute=1">
-                    <!-- Video Close -->
+                    src="https://www.youtube.com/embed/U4voleK7QyI?autoplay=1&mute=1"></iframe>
+                <!-- Video Close -->
 
             </div>
         </div>
 
-        <h3>About</b></h3><br>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#code" type="button"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Steps</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#about" type="button"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">About</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="code" role="tabpanel" aria-labelledby="nav-home-tab">
+                <br><b>Code files:</b>
+                <br><a href="./Prototype2.cs">Prototype2.cs &darr;</a>
+                <br><br><b>Other files:</b>
+                <br><a href="./QR21-25 markers.zip">QR21-25 markers &darr;</a>
+                <br><br><b>Prerequisites:</b>
+                <br> How to Create Image Targets:
+                <a href="https://www.youtube.com/watch?v=Z4bBMpa4xWo&ab_channel=Vuforia%2CaPTCTechnology">YouTube Link
+                    🔗
+                </a>
+
+                <br><br><b>Steps:</b>
+                <br>1. Add the below markers in the Assets folder:
+                <ul>
+                    <li>Atom1(QR21)</li>
+                    <li>Atom2(QR22)</li>
+                    <li>Bond1(QR23)</li>
+                    <li>Bond1(QR24)</li>
+                    <li>Bond1(QR25)</li>
+                </ul>
+                <img src="./Frame 1.png" alt="" width="30%">
+                <br>2. Create 5 Image Targets : Vuforia Engine>Image Target
+                <br><img src="./Frame 2.png" alt="" width="30%">
+                <br>3. Add a sphere under Atom1 marker and Atom2 marker
+                <br><img src="./Frame 3.png" alt="" width="30%">
+                <br>4. Create a new material in Assets folder
+                <br><img src="./Frame 4.png" alt="" width="30%">
+                <br>5. Add material to the spheres created
+                <br>6. Resize the spheres
+                <br><img src="./Frame 5.png" alt="" width="30%">
+                <br>7. Add capsule collider to the spheres and adjust values
+                <br><img src="./Frame 6.png" alt="" width="30%">
+                <br>8. Create empty objects under Bond1, Bond2 and Bond3 markers
+                <br><img src="./Frame 7.png" alt="" width="30%">
+                <br>9. Add capsule collider to the Bond markers and adjust values
+                <br><img src="./Frame 8.png" alt="" width="30%">
+                <br>10. Add the script Prototype2.cs (mentioned above) to the assets folder
+                <br>11. Drag the script to all the empty objects in Bond1, Bond2 and Bond3 markers
+                <br><img src="./Frame 9.png" alt="" width="30%">
+                <br>12. Press Play and it should work!
+            </div>
+            <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <br>
+                Here we have two markers havingatoms(withlabelsAtom1 and Atom2) and a marker with the label
+                Bond1.Whenboth
+                the atoms are brought closer to the Bond 1 marker the marker gets triggered and a single bond is
+                activated. The Bond 1
+                marker is transparent in nature and has QR code printed in black. When the Bond 2 marker (which is also
+                transparent) is
+                placed above the Bond 1 marker, QRs get merged and a new QRisusedforcreating2bondsbetween the atoms.
+                Attachmentisalsosupportedbymagnets,which guide the user. Similarly when the Bond 3 marker isplaced above
+                these two, a
+                new QR code is formed which
+                represents the 3rd bond between the atoms. The image below shows the interaction.
+                <br><img src="./About.png" alt="" width="40%">
+                <br>
+                In the above feature we have observed 2 kinds of interactions:
+                <ul>
+                    <li>Atom markers coming close to the bond marker to form a
+                        bond. Bond marker triggers the bond between the two atom markers. Thus change in proximity
+                        brings forward change in
+                        2
+                        separate entities.</li>
+                    <li>Placement of markers over each other by using the concept of transparency in order to form a
+                        completely new marker which functions differently</li>
+                    <li>Weight of the marker is representative of the strength of the bond.</li>
+                </ul>
+
+                Note: Due to the increase of thickness of the acrylic sheet(which is used as the base of the marker),
+                transparency property is not implemented.
+
+
+                <small
+                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
+                    NOTHING HERE
+                </small>
+            </div>
+        </div>
 
         <!-- bottom section  -->
         <br><br>

@@ -14,129 +14,16 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👽</text></svg>">
 
-
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link href="../../style.css" rel="stylesheet">
     <title>Find Resource Hub</title>
-
-    <style>
-        /* img {
-            width: 70%;
-            border-radius: 10px;
-        } */
-
-        a {
-            text-decoration: none;
-            color: rgb(192, 192, 192);
-        }
-
-        .blackText {
-            color: black;
-        }
-
-        a:hover {
-            color: black;
-        }
-
-        .boxer {
-            background-color: rgb(230, 230, 230);
-            border: 1px solid rgb(201, 201, 201);
-            border-radius: 10px;
-            padding: 2%;
-            margin: 1%;
-            transition: 0.3s;
-            transition-timing-function: ease-in-out;
-        }
-
-        .boxer:hover {
-            box-shadow: 0px 0px 10px lightgrey;
-            transform: scale(1.02);
-            transition: 0.3s;
-            transition-timing-function: ease-in-out;
-        }
-
-        /*start: for callouts */
-        .bs-callout {
-            padding: 20px;
-            margin: 20px 0;
-            border: 1px solid #eee;
-            border-left-width: 5px;
-            border-radius: 3px;
-        }
-
-        .bs-callout h4 {
-            margin-top: 0;
-            margin-bottom: 5px;
-
-        }
-
-        .bs-callout p:last-child {
-            margin-bottom: 0;
-        }
-
-        .bs-callout code {
-            border-radius: 3px;
-        }
-
-        .bs-callout+.bs-callout {
-            margin-top: -5px;
-        }
-
-        .bs-callout-default {
-            border-left-color: #777;
-            background-color: rgb(236, 236, 236);
-        }
-
-        .bs-callout-default h4 {
-            color: #777;
-        }
-
-        .bs-callout-primary {
-            border-left-color: #428bca;
-            background-color: #eef6fd;
-        }
-
-        .bs-callout-primary h4 {
-            color: #428bca;
-            background-color: #4c81ad;
-        }
-
-        .bs-callout-success {
-            border-left-color: #5cb85c;
-            background-color: #f1fcf1;
-        }
-
-        .bs-callout-success h4 {
-            color: #5cb85c;
-        }
-
-        .bs-callout-danger {
-            border-left-color: #d9534f;
-            background-color: #fdeaea;
-        }
-
-        .bs-callout-danger h4 {
-            color: #d9534f;
-        }
-
-        .bs-callout-warning {
-            border-left-color: #f0ad4e;
-            background-color: #fdf6ed;
-        }
-
-        .bs-callout-warning h4 {
-            color: #f0ad4e;
-        }
-
-        .bs-callout-info {
-            border-left-color: #5bc0de;
-            background-color: #e9f5f8;
-        }
-
-        .bs-callout-info h4 {
-            color: #5bc0de;
-        }
-
-        /*end: for callouts */
-    </style>
 
 </head>
 
@@ -192,13 +79,53 @@
                 <br>
                 <!-- Video open -->
                 <iframe height="285" width="500"
-                    src="https://www.youtube.com/embed/5EgFTkoJMHE?autoplay=1&mute=1">
+                    src="https://www.youtube.com/embed/5EgFTkoJMHE?autoplay=1&mute=1"></iframe>
                     <!-- Video Close -->
             </div>
         </div>
 
-        <h3>About</b></h3><br>
-
+        <!-- tab start -->
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#code" type="button" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Steps</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#about" type="button" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">About</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="code" role="tabpanel" aria-labelledby="nav-home-tab">
+                <br><b>Code files:</b>
+                <br><small
+                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
+                    NOTHING HERE
+                </small>
+                <br><br><b>Other files:</b>
+                <br><small
+                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
+                    NOTHING HERE
+                </small>
+                <br><br><b>Prerequisites:</b>
+                <br><small
+                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
+                    NOTHING HERE
+                </small>
+        
+                <br><br><b>Steps:</b>
+                <br><small
+                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
+                    NOTHING HERE
+                </small>
+            </div>
+            <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <br>
+                <small
+                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
+                    NOTHING HERE
+                </small>
+            </div>
+        </div>
+        <!-- tab end  -->
 
         <!-- bottom section  -->
         <br><br>
