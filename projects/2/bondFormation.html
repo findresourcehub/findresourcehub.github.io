@@ -96,33 +96,52 @@
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="code" role="tabpanel" aria-labelledby="nav-home-tab">
                 <br><b>Code files:</b>
-                <br><small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                <br><a href="./Prototype3.cs">Prototype3.cs &darr;</a>
                 <br><br><b>Other files:</b>
-                <br><small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                <br><a href="./QR26-28 markers.zip">QR26-28 markers &darr;</a>
                 <br><br><b>Prerequisites:</b>
-                <br><small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                <br> How to Create Image Targets:
+                <a href="https://www.youtube.com/watch?v=Z4bBMpa4xWo&ab_channel=Vuforia%2CaPTCTechnology">YouTube Link
+                    🔗
+                </a>
         
                 <br><br><b>Steps:</b>
-                <br><small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                <br>1. Add the below markers in the Assets folder:
+                <ul>
+                    <li>Atom3(QR26)</li>
+                    <li>Atom4(QR27)</li>
+                    <li>Atom5(QR28)</li>
+                </ul>
+                <img src="./Frame 10.png" alt="" width="30%">
+                <br><br>2. Create 3 Image Targets : Vuforia Engine>Image Target
+                <br><img src="./Frame 11.png" alt="" width="30%">
+                <br><br>3. Add a sphere under Atom3, Atom4 and Atom5 markers
+                <br><img src="./Frame 12.png" alt="" width="30%">
+                <br><br>4. Create a new material in Assets folder
+                <br><img src="./Frame 13.png" alt="" width="30%">
+                <br><br>5. Add material to the spheres created
+                <br><br>6. Resize the spheres
+                <br><img src="./Frame 14.png" alt="" width="30%">
+                <br><br>7. Add capsule collider to the Atom3 and Atom4 and adjust values
+                <br><img src="./Frame 15.png" alt="" width="30%">
+                <br><br>8. Add the script Prototype3.cs (mentioned above) to the assets folder
+                <br><br>9. Drag the script to the sphere in Atom3 marker
+                <br><br>10. Press Play and it should work!
             </div>
             <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <br>
-                <small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                Some atoms do not interact with each other whereas others do. Here we have 1 parent marker which has a blue atom. There
+                are two other markers which have Red and Green atoms. When the blue atom marker is brought closer to the green atom marker the
+                marker gets attracted due to magnetic force. On the other hand when the marker with the red atom
+                is brought closer to the blue marker,the atom repels and which shows that the bond is not possible in this scenario.
+                
+                <br><br><img src="./about.png" alt="" width="100%">
+                <br><br>
+                In the above feature we have observed the interactions: <ul>
+                    <li>Magnetic pull of markers which function together (in this
+                    scenario, form a bond)</li>
+                    <li>Repulsion of markers which don't have any function together.</li>
+                </ul>
             </div>
         </div>
         <!-- tab end  -->

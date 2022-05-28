@@ -18,7 +18,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -81,49 +81,86 @@
                 <!-- Video open -->
                 <iframe height="285" width="500"
                     src="https://www.youtube.com/embed/3XPGqzg0gyU?autoplay=1&mute=1"></iframe>
-                    <!-- Video Close -->
+                <!-- Video Close -->
             </div>
         </div>
 
         <!-- tab start -->
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#code" type="button" role="tab"
-                    aria-controls="nav-home" aria-selected="true">Steps</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#about" type="button" role="tab"
-                    aria-controls="nav-profile" aria-selected="false">About</button>
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#code" type="button"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Steps</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#about" type="button"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">About</button>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="code" role="tabpanel" aria-labelledby="nav-home-tab">
                 <br><b>Code files:</b>
-                <br><small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                <br><a href="./Prototype41.cs">Prototype41.cs &darr;</a>
+                <br><a href="./Prototype42.cs">Prototype42.cs &darr;</a>
                 <br><br><b>Other files:</b>
-                <br><small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                <br><a href="./QR31-34 markers.zip">QR31-34 markers &darr;</a>
                 <br><br><b>Prerequisites:</b>
-                <br><small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
-        
+                <br> How to Create Image Targets:
+                <a href="https://www.youtube.com/watch?v=Z4bBMpa4xWo&ab_channel=Vuforia%2CaPTCTechnology">YouTube Link
+                    🔗
+                </a>
                 <br><br><b>Steps:</b>
-                <br><small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                <br>1. Add the below markers in the Assets folder:
+                <ul>
+                    <li>Height6(QR31)</li>
+                    <li>Atom6(QR32)</li>
+                    <li>Atom7(QR33)</li>
+                    <li>Height7(QR34)</li>
+                </ul>
+                <img src="./Frame 16.png" alt="" width="30%">
+                <br><br>2. Create 4 Image Targets : Vuforia Engine>Image Target
+                <br><img src="./Frame 17.png" alt="" width="30%">
+                <br><br>3. Add a sphere under Atom6 and Atom7
+                <br><img src="./Frame 18.png" alt="" width="30%">
+                <br><br>4. Create a new material in Assets folder
+                <br><img src="./Frame 19.png" alt="" width="30%">
+                <br><br>5. Add material to the spheres created
+                <br><br>6. Resize the spheres Atom6 and Atom7
+                <br><img src="./Frame 20.png" alt="" width="60%">
+                <br><br>7. Add box collider to the Atom6 and Atom7 and adjust values
+                <br><img src="./Frame 21.png" alt="" width="60%">
+                <br><br>8. Create empty objects under Height6 and Height7 markers
+                <br><img src="./Frame 22.png" alt="" width="30%">
+                <br><br>9. Create empty objects under Atom6 and Atom7 markers
+                <br><img src="./Frame 23.png" alt="" width="5   0%">
+                <br><br>10. Add the script Prototype41.cs and Prototype42.cs (mentioned above) to the assets folder
+                <br><br>11. Drag Prototype41.cs to Atom6 and Prototype42.cs to Atom7
+                <br><br>12.Add event trackers in QR31 -> QR34 in this manner
+                <br><img src="./Frame 24.png" alt="" width="80%">
+                <br><br>13.Add TextMeshPro from 3D objects. TEXT1 and TEXT3 under Atom6 and TEXT2 under Atom7.
+                <br><img src="./Frame 25.png" alt="" width="80%">
+                <br><br>14.Add Spheres under Atom6 and Atom7
+                <br><img src="./Frame 26.png" alt="" width="60%">
+                <br><br>15. Press Play and it should work!
             </div>
             <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <br>
-                <small
-                    class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-default bg-default bg-opacity-10 border border-default border-opacity-10 rounded-2">
-                    NOTHING HERE
-                </small>
+                In here we have 2 types of markers, atom marker and height marker. When the atom markers are brought
+                closer, a bond
+                forms between them. There is also a visual indicator of how far
+                aretheatoms.Eachoftheatommarkerhasaheightmarker attached
+                to it. The farther the atom marker goes from its height marker, the higher the position of the atom will
+                be. The same is
+                depicted in the image. The heights of the atoms are also displayed visually.
+                This kind of freedom is required for triclinic lattice structure where all the angles (alpha, beta
+                andgamma)and the
+                lengths of the bonds (a,b,c) are different.
+                <br><br>
+                <img src="./about.png" alt="" width="100%">
+                <br><br>
+                In the above feature we have observed the interactions:
+                <ul>
+                    <li>Atom Markers form a bond when in vicinity</li>
+                    <li>Heights of the
+                        atoms can beadjustedusingseparate markers acting as controllers.</li>
+                </ul>
             </div>
         </div>
         <!-- tab end  -->
